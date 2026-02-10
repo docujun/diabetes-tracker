@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica',
+    'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* PWA 상태바 스타일 */
+body {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* 스크롤 부드럽게 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 터치 피드백 제거 */
+button, input, textarea, select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 모바일 최적화 */
+input, textarea, select {
+  font-size: 16px; /* iOS에서 폰트 확대 방지 */
+}
+
+/* PWA 전체 화면 모드에서 상단 padding */
+body.fullscreen {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
