@@ -1,8 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
   "outputDirectory": "build",
-  "framework": "react",
   "headers": [
     {
       "source": "/service-worker.js",
@@ -10,15 +8,6 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/manifest.json",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/manifest+json"
         }
       ]
     }
